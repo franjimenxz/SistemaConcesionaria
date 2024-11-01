@@ -1,0 +1,18 @@
+<!-- concesionaria/templates/historial_mantenimiento.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial de Mantenimiento de {{ vehiculo.marca }} {{ vehiculo.modelo }}</title>
+</head>
+<body>
+    <h1>Historial de Mantenimiento</h1>
+    <h2>Vehículo: {{ vehiculo.marca }} {{ vehiculo.modelo }}</h2>
+    <ul>
+        {% for mantenimiento in mantenimientos %}
+            <li>{{ mantenimiento.fecha }} - {{ mantenimiento.tipo_servicio }} - {{ mantenimiento.estado }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

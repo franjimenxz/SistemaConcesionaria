@@ -1,0 +1,7 @@
+<!-- concesionaria/templates/crear_financiamiento.html -->
+<h1>Crear Financiamiento para {{ vehiculo.marca }} {{ vehiculo.modelo }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Generar Financiamiento</button>
+</form>

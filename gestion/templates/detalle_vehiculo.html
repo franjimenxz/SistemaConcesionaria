@@ -1,0 +1,19 @@
+<!-- concesionaria/templates/detalle_vehiculo.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Vehículo</title>
+</head>
+<body>
+    <h1>Detalles del Vehículo</h1>
+    <p>Marca: {{ vehiculo.marca }}</p>
+    <p>Modelo: {{ vehiculo.modelo }}</p>
+    <p>Año: {{ vehiculo.anio }}</p>
+    <p>Precio: ${{ vehiculo.precio }}</p>
+    <p>Especificaciones: {{ vehiculo.especificaciones }}</p>
+    <p>Stock: {{ vehiculo.stock }}</p>
+    <p>Estado: {{ vehiculo.estado }}</p>
+</body>
+</html>

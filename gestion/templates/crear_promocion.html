@@ -1,0 +1,7 @@
+<!-- concesionaria/templates/crear_promocion.html -->
+<h1>Crear Promoción</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Crear Promoción</button>
+</form>
